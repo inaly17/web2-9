@@ -1,0 +1,29 @@
+
+<!DOCYPE　html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Google Maps API</title>
+<style type="text/css">
+  html,body{height: 100%; margin: 0; padding:0;}
+  #map{height:100%;}
+  </style>
+  </head>
+  
+  <body>
+  <div id="map"></div>
+  
+  <script type="text/javascript">
+  function initMap(){
+    var map=new google.maps.Map(document.getElementById('map'),{
+      center:{lat:35.46206,Ing:139.330869},
+      zoom:16
+      });
+      }
+      </script>
+  
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAuE1QMeNWFE82rEsCVSC4w-XltlBbrSBQ&callback=initMap">
+    </script>
+    </html>
+  
